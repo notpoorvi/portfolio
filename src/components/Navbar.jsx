@@ -6,7 +6,7 @@ import ContactIcon from "../assets/contact.svg";
 
 const Navbar = () => {
   return (
-    <nav className="font-atkinson flex bg-[#ffffff] text-[#575878] w-[70%] rounded-xl h-12 items-center mx-auto fixed top-6 left-1/2 transform -translate-x-1/2 justify-between backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400">
+    <nav className="font-atkinson flex bg-[#ffffff] text-[#575878] w-[70%] rounded-xl h-12 items-center mx-auto fixed top-6 left-1/2 transform -translate-x-1/2 justify-between backdrop-filter backdrop-blur-lg bg-opacity-5 border border-gray-400 z-50">
       <p className="text-xl ml-8">Poorvi Bhatia</p>
       <div className="hidden lg:flex lg:justify-evenly lg:mr-8">
         <a href="#home" className="flex items-center mx-2">
