@@ -6,7 +6,7 @@ const Header = () => {
   const [isTyping, setIsTyping] = useState(true);
   const [charIndex, setCharIndex] = useState(0);
 
-  const words = ["software development", "data science", "machine learning"];
+  const words = ["software development.", "data science.", "machine learning."];
   const typingSpeed = 100;
   const backspaceSpeed = 50;
   const pauseTime = 2000;
@@ -46,8 +46,11 @@ const Header = () => {
   }, [charIndex, currentWordIndex, isTyping]);
 
   return (
-    <div className="text-[#575878] text-2xl w-[60%] mt-40 mx-auto font-bold">
-      hello! i'm Poorvi, a 3rd year Computer Science student at Simon Fraser
+    <div
+      className="text-[#575878] text-2xl w-[65%] mt-40 mx-auto font-bold"
+      id="home"
+    >
+      Hello! I'm Poorvi, a 3rd year Computer Science student at Simon Fraser
       University with interests in{" "}
       <span className="text-[#8f8c60] font-extrabold">
         {displayText}

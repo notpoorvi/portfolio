@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import ResumeButton from "./components/ResumeButton";
+import AboutSection from "./components/AboutSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <Header />
         <ResumeButton />
+        <AboutSection />
       </div>
     </>
   );
