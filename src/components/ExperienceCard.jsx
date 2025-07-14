@@ -58,31 +58,6 @@ const ProjectCard = ({
   );
 };
 
-// const ReseachOtherCard = ({ imgUrl, name, date, description }) => {
-//   return (
-//     <div className="bg-[#ffffff] text-[#575878] rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 max-w-xs md:max-w-xl mx-auto my-4">
-//       <div className="flex items-center md:mt-4 mb-3">
-//         <img
-//           className="h-10 md:h-16 object-cover mx-auto pt-4 pr-4 pl-4 md:mb-4"
-//           src={imgUrl}
-//           alt=""
-//         />
-//         <div className="text-[#8f8c60] italic md:ml-4 pt-4 pl-4 pr-4 md:p-0">
-//           <p className="font-bold text-l md:text-2xl">{name}</p>
-//           <p className="font-semibold text-sm md:text-lg">{date}</p>
-//         </div>
-//       </div>
-//       <ul className="mt-2 text-sm md:text-lg w-[80%] md:w-[90%] mx-auto mb-4 space-y-2">
-//         {description.map((item, idx) => (
-//           <li className="list-disc" key={idx}>
-//             {item}
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
-
 const ReseachOtherCard = ({ imgUrl, name, date, description }) => {
   return (
     <div className="bg-[#ffffff] text-[#575878] rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 max-w-xs md:max-w-xl mx-auto my-4">
