@@ -47,7 +47,7 @@ const Header = () => {
 
   return (
     <div
-      className="text-[#575878] text-2xl w-[75%] mt-40 mx-auto font-bold"
+      className="text-[#575878] text-2xl w-[75%] md:w-[65%] mt-40 mx-auto font-bold"
       id="home"
     >
       Hello! I'm Poorvi, a 3rd year Computer Science student at Simon Fraser
