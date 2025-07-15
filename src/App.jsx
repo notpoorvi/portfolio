@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import ResumeButton from "./components/ResumeButton";
 import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <ResumeButton />
         <AboutSection />
         <ExperienceSection />
+        <Contact />
+        <Footer />
       </div>
     </>
   );
