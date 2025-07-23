@@ -81,7 +81,7 @@ const Navbar = () => {
         } flex flex-col items-center text-[#8f8c60] text-[18px] font-extrabold`}
       >
         {["home", "about", "experience", "contact"].map((item, idx) => (
-          <a key={idx} href={`#${item}`}>
+          <a key={idx} href={`#${item}`} onClick={toggleHamburger}>
             {item}
           </a>
         ))}
