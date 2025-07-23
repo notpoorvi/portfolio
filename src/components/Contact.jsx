@@ -8,7 +8,7 @@ const NameEmailInput = ({ type }) => (
     <p className="text-[#575878] text-xl md:text-2xl italic">{type}</p>
     <input
       type="text"
-      className="w-72 md:w-[32rem] h-12 text-xl bg-gray-200 text-[#575878] p-2 rounded-xl"
+      className="w-72 mid:w-[26rem] md:w-[32rem] h-12 text-xl bg-gray-200 text-[#575878] p-2 rounded-xl"
     />
   </div>
 );
@@ -16,7 +16,7 @@ const NameEmailInput = ({ type }) => (
 const MessageInput = () => (
   <div className="mx-auto w-fit mt-4">
     <p className="text-[#575878] text-xl md:text-2xl italic">message</p>
-    <textarea className="w-72 md:w-[32rem] h-24 text-xl bg-gray-200 text-[#575878] p-2 rounded-xl" />
+    <textarea className="w-72 mid:w-[26rem] md:w-[32rem] h-24 text-xl bg-gray-200 text-[#575878] p-2 rounded-xl" />
   </div>
 );
 

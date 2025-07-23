@@ -6,7 +6,7 @@ import ContactIcon from "../assets/contact.svg";
 import { useState } from "react";
 
 const Hamburger = ({ isOpen }) => (
-  <div className="w-6 h-6 flex justify-around flex-col z-10 lg:hidden mr-8 cursor-pointer">
+  <div className="w-6 h-6 flex justify-around flex-col z-10 md:hidden mr-8 cursor-pointer">
     <div
       className={`w-6 h-1 rounded-[10px] bg-[#575878] origin-[1px] transition-all duration-300 ease-linear ${
         isOpen ? "rotate-45" : "rotate-0"
@@ -63,7 +63,7 @@ const Navbar = () => {
     <>
       <nav className="font-atkinson flex bg-[#ffffff] text-[#575878] w-[85%] rounded-xl h-12 items-center mx-auto fixed top-6 left-1/2 transform -translate-x-1/2 justify-between backdrop-filter backdrop-blur-lg bg-opacity-5 border border-gray-400 z-50">
         <p className="text-xl ml-8">Poorvi Bhatia</p>
-        <div className="hidden lg:flex lg:justify-evenly lg:mr-8">
+        <div className="hidden md:flex lg:justify-evenly md:mr-8">
           {homeIcon}
           {aboutIcon}
           {experienceIcon}
@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
       </nav>
       <div
-        className={`lg:hidden fixed top-20 left-1/2 transform -translate-x-1/2 w-[85%] bg-[#ffffff] backdrop-filter backdrop-blur-lg bg-opacity-20 border border-gray-400 rounded-xl z-50 transition-all duration-300 ease-in-out ${
+        className={`md:hidden fixed top-20 left-1/2 transform -translate-x-1/2 w-[85%] bg-[#ffffff] backdrop-filter backdrop-blur-lg bg-opacity-20 border border-gray-400 rounded-xl z-50 transition-all duration-300 ease-in-out ${
           hamburgerOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-4 pointer-events-none"

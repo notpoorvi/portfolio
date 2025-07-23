@@ -9,6 +9,10 @@ export default {
       fontFamily: {
         atkinson: ['"Atkinson Hyperlegible Next"', 'sans-serif'],
       },
+      screens: {
+        "sm": "500px",
+        "mid": "610px"
+      }
     },
   },
   plugins: [],

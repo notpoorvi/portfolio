@@ -5,18 +5,18 @@ import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import experiences from "./assets/experiences.json";
 
 function App() {
   return (
     <>
       <div className="font-atkinson">
-        {/* <div className="bg-gradient-to-t from-[#98A1BC] from-[20%] to-[#565878] to-[100%] min-h-screen relative"> */}
         <h1 className="font-atkinson text-xl"></h1>
         <Navbar />
         <Header />
         <ResumeButton />
         <AboutSection />
-        <ExperienceSection />
+        <ExperienceSection experiences={experiences} />
         <Contact />
         <Footer />
       </div>

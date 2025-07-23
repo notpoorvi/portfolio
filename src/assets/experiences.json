@@ -1,0 +1,37 @@
+[
+  {
+    "imgUrl": "/assets/images/campusConnect.png",
+    "name": "Campus Connect AI",
+    "date": "Mar. 2025 - May 2025",
+    "description": "Local Knowledge RAG Chat bot for International Students as part of RBC Borealis' Let's Solve It 2025",
+    "techStack": [
+      "Streamlit",
+      "Python",
+      "ChromaDB",
+      "HuggingFace",
+      "Mistral-7B"
+    ],
+    "gitHubLink": "https://github.com/ayanahye/Campus-Connect-AI",
+    "type": "project"
+  },
+  {
+    "imgUrl": "/assets/images/rosielab.png",
+    "name": "Research Assistant at Rosie Lab, SFU",
+    "date": "Dec. 2025 - Cur.",
+    "description": [
+      "Benchmarked automatic speech recognition (ASR) models from OpenAI and Nvidia on untrained audio types, such as distanced and shouted speech, to evaluate performance gaps and model robustness.",
+      "Utilized PyTorch and Pandas to preprocess audio datasets, train models, and analyze results, gaining hands-on experience with deep learning frameworks and data manipulation."
+    ],
+    "type": "research"
+  },
+  {
+    "imgUrl": "https://ixlab.cs.sfu.ca/static/img/siteAssets/globalAssets/ixlab.svg",
+    "name": "USRA at ixlab, SFU",
+    "date": "May. 2025 - Aug. 2025",
+    "description": [
+      "Performed Data Analysis on reddit posts to extract relevant insights and form patterns.",
+      "Utilized classification techniques such as TF-IDF SVM with linear kernel, Fine-tuned BERT, and LLMs like Gemini 2.5 Flash and Claude Sonnet to perform text classification."
+    ],
+    "type": "research"
+  }
+]
