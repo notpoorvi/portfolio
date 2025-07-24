@@ -4,6 +4,7 @@ import AboutIcon from "../assets/about.svg";
 import ExperienceIcon from "../assets/experience.svg";
 import ContactIcon from "../assets/contact.svg";
 import { useState } from "react";
+import DarkModeBtn from "./DarkModeBtn";
 
 const Hamburger = ({ isOpen }) => (
   <div className="w-6 h-6 flex justify-around flex-col z-10 md:hidden mr-8 cursor-pointer">
@@ -69,8 +70,13 @@ const Navbar = () => {
           {experienceIcon}
           {contactIcon}
         </div>
-        <div onClick={toggleHamburger}>
-          <Hamburger isOpen={hamburgerOpen} />
+        <div className="flex items-center mr-8 gap-4">
+          <div className="hidden md:block">
+            <DarkModeBtn />
+          </div>
+          <div onClick={toggleHamburger}>
+            <Hamburger isOpen={hamburgerOpen} />
+          </div>
         </div>
       </nav>
       <div
