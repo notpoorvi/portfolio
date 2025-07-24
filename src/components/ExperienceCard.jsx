@@ -2,7 +2,7 @@ import React from "react";
 
 const ExperienceButton = ({ buttonText, link }) => (
   <a
-    className="text-l md:text-xl bg-[#bcc4db] text-[#8f8c60] p-1 rounded-lg border border-gray-400"
+    className="text-l mid:text-xl bg-[#bcc4db] hover:bg-[#8f8c60] hover:text-[#575878] text-[#8f8c60] p-1 rounded-lg border border-gray-400"
     href={link}
     target="_blank"
     rel="noopener"
@@ -21,21 +21,21 @@ const ProjectCard = ({
   previewLink,
 }) => {
   return (
-    <div className="bg-[#ffffff] text-[#575878] rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 max-w-xs md:max-w-xl mx-auto my-4">
+    <div className="bg-[#ffffff] text-[#575878] rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 max-w-xs mid:max-w-md md:max-w-xl mx-auto my-4">
       <img
-        className="h-48 md:h-80 object-cover mx-auto pt-4 pr-4 pl-4 md:mb-4"
+        className="h-48 mid:h-64 md:h-80 object-cover mx-auto pt-4 pr-4 pl-4 md:mb-4"
         src={imgUrl}
         alt=""
       />
       <div className="text-[#8f8c60] italic md:ml-4 pt-4 pl-4 pr-4 md:p-0">
-        <p className="font-bold text-l md:text-2xl">{name}</p>
-        <p className="font-semibold text-sm md:text-lg">{date}</p>
+        <p className="font-bold text-l mid:text-xl md:text-2xl">{name}</p>
+        <p className="font-semibold text-sm mid:text-base md:text-lg">{date}</p>
       </div>
-      <p className="mt-2 text-sm md:text-lg w-[90%] md:w-[94%] mx-auto">
+      <p className="mt-2 text-sm mid:text-base md:text-lg w-[90%] mid:w-[92%] md:w-[94%] mx-auto">
         {description}
       </p>
-      <div className="flex my-3 items-center justify-around gap-6 md:gap-20 md:px-4 px-1">
-        <div className="flex gap-2 w-[60%] text-sm md:text-base flex-wrap justify-start">
+      <div className="flex my-3 items-center justify-around gap-6 md:gap-20">
+        <div className="flex gap-2 w-[60%] text-sm mid:text-base md:text-base flex-wrap justify-start">
           {techStack.map((item, idx) => (
             <div
               className="bg-[#ffffff] backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 p-[2px] rounded-lg "
@@ -58,21 +58,23 @@ const ProjectCard = ({
   );
 };
 
-const ReseachOtherCard = ({ imgUrl, name, date, description }) => {
+const ResearchOtherCard = ({ imgUrl, name, date, description }) => {
   return (
-    <div className="bg-[#ffffff] text-[#575878] rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 max-w-xs md:max-w-xl mx-auto my-4">
+    <div className="bg-[#ffffff] text-[#575878] rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 max-w-xs mid:max-w-md md:max-w-xl mx-auto my-4">
       <div className="flex items-center md:mt-4 mb-3 pl-4 pr-4">
         <img
-          className="h-10 md:h-16 object-cover pt-4 md:mb-4 flex-shrink-0"
+          className="h-10 mid:h-13 md:h-16 object-cover pt-4 md:mb-4 flex-shrink-0"
           src={imgUrl}
           alt=""
         />
         <div className="text-[#8f8c60] italic ml-4 pt-4 md:p-0">
-          <p className="font-bold text-l md:text-2xl">{name}</p>
-          <p className="font-semibold text-sm md:text-lg">{date}</p>
+          <p className="font-bold text-l mid:text-xl md:text-2xl">{name}</p>
+          <p className="font-semibold text-sm mid:text-base md:text-lg">
+            {date}
+          </p>
         </div>
       </div>
-      <ul className="mt-2 text-sm md:text-lg w-[80%] md:w-[90%] mx-auto mb-4 space-y-2">
+      <ul className="mt-2 text-sm mid:text-base md:text-lg w-[80%] md:w-[90%] mx-auto mb-4 space-y-2">
         {description.map((item, idx) => (
           <li className="list-disc" key={idx}>
             {item}
@@ -109,7 +111,7 @@ const ExperienceCard = ({
 
     case "research":
       return (
-        <ReseachOtherCard
+        <ResearchOtherCard
           imgUrl={imgUrl}
           name={name}
           date={date}

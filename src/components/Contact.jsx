@@ -1,35 +1,81 @@
-import React from "react";
+import React, { useState } from "react";
 import LinkedinIcon from "../assets/linkedin.svg";
 import MailIcon from "../assets/mail.svg";
 import GithubIcon from "../assets/github.svg";
+import emailjs from "@emailjs/browser";
 
-const NameEmailInput = ({ type }) => (
-  <div className="mx-auto w-fit mt-4">
-    <p className="text-[#575878] text-xl md:text-2xl italic">{type}</p>
-    <input
-      type="text"
-      className="w-72 mid:w-[26rem] md:w-[32rem] h-12 text-xl bg-gray-200 text-[#575878] p-2 rounded-xl"
-    />
-  </div>
-);
+const EmailForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-const MessageInput = () => (
-  <div className="mx-auto w-fit mt-4">
-    <p className="text-[#575878] text-xl md:text-2xl italic">message</p>
-    <textarea className="w-72 mid:w-[26rem] md:w-[32rem] h-24 text-xl bg-gray-200 text-[#575878] p-2 rounded-xl" />
-  </div>
-);
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-const SendButton = () => {
+    const serviceId = "service_a17ypcw";
+    const templateId = "template_lzwakri";
+    const publicKey = "iJoHL4iqpoymAn4vf";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "Poorvi Bhatia",
+      message: message,
+    };
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((e) => {
+        console.error("Error sending email: ", e);
+      });
+  };
+
   return (
-    <a
-      className="flex items-center bg-[#ffffff] text-[#575878] rounded-xl h-10 w-44 justify-around  mx-auto backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 mt-4 hover:text-[#8f8c60]"
-      href="#"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <p className="md:text-[18px] px-1">send message</p>
-    </a>
+    <form onSubmit={handleSubmit}>
+      {/* name field */}
+      <div className="mx-auto w-fit mt-4">
+        <p className="text-[#575878] text-xl md:text-2xl italic">name</p>
+        <input
+          type="text"
+          placeholder={`What is your name?`}
+          className="w-72 mid:w-[26rem] md:w-[32rem] h-12 text-base md:text-l bg-gray-200 text-[#575878] p-4 rounded-xl"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </div>
+      {/* email field */}
+      <div className="mx-auto w-fit mt-4">
+        <p className="text-[#575878] text-xl md:text-2xl italic">email</p>
+        <input
+          type="email"
+          placeholder={`What is your email?`}
+          className="w-72 mid:w-[26rem] md:w-[32rem] h-12 text-base md:text-l bg-gray-200 text-[#575878] p-4 rounded-xl"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
+      {/* message field */}
+      <div className="mx-auto w-fit mt-4">
+        <p className="text-[#575878] text-xl md:text-2xl italic">message</p>
+        <textarea
+          className="w-72 mid:w-[26rem] md:w-[32rem] h-28 text-base md:text-l bg-gray-200 text-[#575878] p-4 rounded-xl"
+          placeholder="Your message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
+      </div>
+      <button
+        type="submit"
+        className="flex items-center bg-[#ffffff] text-[#575878] rounded-xl h-10 w-44 justify-around  mx-auto backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 mt-4 hover:text-[#8f8c60]"
+      >
+        <p className="md:text-[18px] px-1">send message</p>
+      </button>
+    </form>
   );
 };
 
@@ -59,10 +105,13 @@ const Contact = () => {
           </div>
         ))}
       </div>
-      <NameEmailInput type="name" />
-      <NameEmailInput type="email" />
-      <MessageInput />
-      <SendButton />
+      <EmailForm />
+      {/* <div id="form">
+        <NameEmailInput type="name" />
+        <NameEmailInput type="email" />
+        <MessageInput />
+        <SendButton />
+      </div> */}
     </div>
   );
 };

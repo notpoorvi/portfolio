@@ -12,6 +12,8 @@
   background-size: 60px 60px;
   background-attachment: fixed;
 
+  scrollbar-color: #8f8c60 #ffffff;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
