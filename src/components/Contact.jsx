@@ -97,7 +97,13 @@ const Contact = () => {
         {contactIcons.map((icon, idx) => (
           <div
             key={idx}
-            className="rounded-full backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 p-2 hover:bg-brand-yellow"
+            className="rounded-full backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 p-2 hover:shadow-xl transition-all duration-300"
+            style={{
+              ":hover": {
+                boxShadow:
+                  "0 0 20px rgba(255, 215, 0, 0.6), 0 0 40px rgba(255, 215, 0, 0.4)",
+              },
+            }}
           >
             <a href={icon.link} target="_blank" rel="noopener">
               <img src={icon.img} className="w-sm h-sm md:w-md md:h-md" />
@@ -106,12 +112,6 @@ const Contact = () => {
         ))}
       </div>
       <EmailForm />
-      {/* <div id="form">
-        <NameEmailInput type="name" />
-        <NameEmailInput type="email" />
-        <MessageInput />
-        <SendButton />
-      </div> */}
     </div>
   );
 };
