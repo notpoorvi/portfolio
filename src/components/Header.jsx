@@ -6,7 +6,12 @@ const Header = () => {
   const [isTyping, setIsTyping] = useState(true);
   const [charIndex, setCharIndex] = useState(0);
 
-  const words = ["software development.", "data science.", "machine learning."];
+  const words = [
+    "software development.",
+    "data science.",
+    "machine learning.",
+    "fullstack development.",
+  ];
   const typingSpeed = 100;
   const backspaceSpeed = 50;
   const pauseTime = 2000;
@@ -43,16 +48,18 @@ const Header = () => {
         return () => clearTimeout(timer);
       }
     }
-  }, [charIndex, currentWordIndex, isTyping]);
+  }, [charIndex, currentWordIndex, isTyping, words]);
 
   return (
     <div
-      className="text-[#575878] text-2xl w-[75%] md:w-[65%] mt-40 mx-auto font-bold"
-      id="home"
+      className="text-brand-purple text-2xl md:text-3xl w-[75%] md:w-[65%] mt-40 mx-auto font-bold leading-snug md:leading-snug z-80"
+      id="about"
     >
-      Hello! I'm Poorvi, a 3rd year Computer Science student at Simon Fraser
-      University with interests in{" "}
-      <span className="text-[#8f8c60] font-extrabold">
+      Hello! I'm
+      <p className="text-5xl text-brand-yellow py-2">Poorvi Bhatia</p>
+      I'm a 3rd year Computer Science student at Simon Fraser University with
+      interests in{" "}
+      <span className="text-brand-yellow font-extrabold">
         {displayText}
         <span className="animate-pulse text-3xl">|</span>
       </span>

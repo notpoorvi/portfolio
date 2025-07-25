@@ -12,7 +12,7 @@ const ExperienceSection = ({ experiences }) => {
   return (
     <>
       <div
-        className="flex flex-col md:flex-row justify-center mt-16 font-extrabold text-[#575878] text-2xl items-center mb-8"
+        className="flex flex-col md:flex-row justify-center mt-16 font-extrabold text-brand-purple text-2xl items-center mb-8"
         id="experience"
       >
         <p className="font-extrabold italic text-center ">experience —</p>
@@ -21,8 +21,8 @@ const ExperienceSection = ({ experiences }) => {
           {experienceTypes.map((label, idx) => (
             <button
               key={idx}
-              className={`hover:text-[#8f8c60] cursor-pointer transition-colors duration-200 ${
-                experienceType === label ? "text-[#8f8c60]" : ""
+              className={`hover:text-brand-yellow cursor-pointer transition-colors duration-200 ${
+                experienceType === label ? "text-brand-yellow" : ""
               }`}
               onClick={() => setExperienceType(label)}
             >

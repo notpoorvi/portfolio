@@ -13,7 +13,13 @@ export default {
       screens: {
         "sm": "500px",
         "mid": "610px"
-      }
+      },
+      colors: {
+        'brand-purple-light': '#bcc4db',
+        'brand-purple': '#575878',
+        'brand-yellow': '#8f8c60',
+      },
+
     },
   },
   plugins: [],

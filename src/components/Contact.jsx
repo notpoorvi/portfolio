@@ -39,31 +39,31 @@ const EmailForm = () => {
     <form onSubmit={handleSubmit}>
       {/* name field */}
       <div className="mx-auto w-fit mt-4">
-        <p className="text-[#575878] text-xl md:text-2xl italic">name</p>
+        <p className="text-brand-purple text-xl md:text-2xl italic">name</p>
         <input
           type="text"
           placeholder={`What is your name?`}
-          className="w-72 mid:w-[26rem] md:w-[32rem] h-12 text-base md:text-l bg-gray-200 text-[#575878] p-4 rounded-xl"
+          className="w-72 mid:w-[26rem] md:w-[32rem] h-12 text-base md:text-l bg-gray-200 text-brand-purple p-4 rounded-xl"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
       </div>
       {/* email field */}
       <div className="mx-auto w-fit mt-4">
-        <p className="text-[#575878] text-xl md:text-2xl italic">email</p>
+        <p className="text-brand-purple text-xl md:text-2xl italic">email</p>
         <input
           type="email"
           placeholder={`What is your email?`}
-          className="w-72 mid:w-[26rem] md:w-[32rem] h-12 text-base md:text-l bg-gray-200 text-[#575878] p-4 rounded-xl"
+          className="w-72 mid:w-[26rem] md:w-[32rem] h-12 text-base md:text-l bg-gray-200 text-brand-purple p-4 rounded-xl"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       {/* message field */}
       <div className="mx-auto w-fit mt-4">
-        <p className="text-[#575878] text-xl md:text-2xl italic">message</p>
+        <p className="text-brand-purple text-xl md:text-2xl italic">message</p>
         <textarea
-          className="w-72 mid:w-[26rem] md:w-[32rem] h-28 text-base md:text-l bg-gray-200 text-[#575878] p-4 rounded-xl"
+          className="w-72 mid:w-[26rem] md:w-[32rem] h-28 text-base md:text-l bg-gray-200 text-brand-purple p-4 rounded-xl"
           placeholder="Your message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -71,7 +71,7 @@ const EmailForm = () => {
       </div>
       <button
         type="submit"
-        className="flex items-center bg-[#ffffff] text-[#575878] rounded-xl h-10 w-44 justify-around  mx-auto backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 mt-4 hover:text-[#8f8c60]"
+        className="flex items-center bg-[#ffffff] text-brand-purple rounded-xl h-10 w-44 justify-around  mx-auto backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 mt-4 hover:text-brand-yellow"
       >
         <p className="md:text-[18px] px-1">send message</p>
       </button>
@@ -87,7 +87,7 @@ const Contact = () => {
   ];
   return (
     <div>
-      <div className="mt-16 text-[#575878] text-center" id="contact">
+      <div className="mt-16 text-brand-purple text-center" id="contact">
         <p className="font-extrabold italic text-2xl">let's get in touch</p>
         <p className="text-lg md:text-xl mt-1 px-10">
           feel free to send me a message or reach out on my socials!
@@ -97,7 +97,7 @@ const Contact = () => {
         {contactIcons.map((icon, idx) => (
           <div
             key={idx}
-            className="rounded-full backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 p-2 hover:bg-[#8f8c60]"
+            className="rounded-full backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 p-2 hover:bg-brand-yellow"
           >
             <a href={icon.link} target="_blank" rel="noopener">
               <img src={icon.img} className="w-sm h-sm md:w-md md:h-md" />

@@ -2,7 +2,7 @@ import React from "react";
 
 const ExperienceButton = ({ buttonText, link }) => (
   <a
-    className="text-l mid:text-xl bg-[#bcc4db] hover:bg-[#8f8c60] hover:text-[#575878] text-[#8f8c60] p-1 rounded-lg border border-gray-400"
+    className="text-l mid:text-xl bg-[#bcc4db] hover:bg-brand-yellow hover:text-brand-purple text-brand-yellow p-1 rounded-lg border border-gray-400"
     href={link}
     target="_blank"
     rel="noopener"
@@ -21,13 +21,13 @@ const ProjectCard = ({
   previewLink,
 }) => {
   return (
-    <div className="bg-[#ffffff] text-[#575878] rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 max-w-xs mid:max-w-md md:max-w-xl mx-auto my-4">
+    <div className="bg-[#ffffff] text-brand-purple rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 max-w-xs mid:max-w-md md:max-w-xl mx-auto my-4">
       <img
         className="h-48 mid:h-64 md:h-80 object-cover mx-auto pt-4 pr-4 pl-4 md:mb-4"
         src={imgUrl}
         alt=""
       />
-      <div className="text-[#8f8c60] italic md:ml-4 pt-4 pl-4 pr-4 md:p-0">
+      <div className="text-brand-yellow italic md:ml-4 pt-4 pl-4 pr-4 md:p-0">
         <p className="font-bold text-l mid:text-xl md:text-2xl">{name}</p>
         <p className="font-semibold text-sm mid:text-base md:text-lg">{date}</p>
       </div>
@@ -60,14 +60,14 @@ const ProjectCard = ({
 
 const ResearchOtherCard = ({ imgUrl, name, date, description }) => {
   return (
-    <div className="bg-[#ffffff] text-[#575878] rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 max-w-xs mid:max-w-md md:max-w-xl mx-auto my-4">
+    <div className="bg-[#ffffff] text-brand-purple rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 max-w-xs mid:max-w-md md:max-w-xl mx-auto my-4">
       <div className="flex items-center md:mt-4 mb-3 pl-4 pr-4">
         <img
           className="h-10 mid:h-13 md:h-16 object-cover pt-4 md:mb-4 flex-shrink-0"
           src={imgUrl}
           alt=""
         />
-        <div className="text-[#8f8c60] italic ml-4 pt-4 md:p-0">
+        <div className="text-brand-yellow italic ml-4 pt-4 md:p-0">
           <p className="font-bold text-l mid:text-xl md:text-2xl">{name}</p>
           <p className="font-semibold text-sm mid:text-base md:text-lg">
             {date}

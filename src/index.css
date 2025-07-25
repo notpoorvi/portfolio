@@ -5,14 +5,14 @@
 @tailwind utilities;
 
 :root {
-  background-color: #bcc4db;
+  background-color: #FDF2F8;
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0.05) 1.5px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1.5px, transparent 1px);
   background-size: 60px 60px;
   background-attachment: fixed;
 
-  scrollbar-color: #8f8c60 #ffffff;
+  scrollbar-color: #575878 #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

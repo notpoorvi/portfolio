@@ -5,7 +5,7 @@ import CV from "../assets/cv.pdf";
 const ResumeButton = () => {
   return (
     <a
-      className="flex items-center bg-[#ffffff] text-[#575878] rounded-xl h-10 w-44 justify-around  mx-auto backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 mt-10 hover:text-[#8f8c60]"
+      className="flex items-center bg-[#ffffff] text-brand-purple rounded-xl h-10 w-44 justify-around  mx-auto backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 mt-10 hover:text-brand-yellow"
       href={CV}
       target="_blank"
       rel="noopener noreferrer"
