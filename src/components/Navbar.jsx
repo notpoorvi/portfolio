@@ -63,11 +63,16 @@ const Navbar = () => {
           hamburgerOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-4 pointer-events-none"
-        } flex flex-col items-center text-brand-yellow text-[18px] font-extrabold`}
+        } flex flex-col items-center text-brand-yellow text-xl font-extrabold `}
       >
         {["about", "portfolio", "skills", "experience", "contact"].map(
           (item, idx) => (
-            <a key={idx} href={`#${item}`} onClick={toggleHamburger}>
+            <a
+              key={idx}
+              href={`#${item}`}
+              onClick={toggleHamburger}
+              className="hover:bg-white/30 p-1 hover:rounded-xl"
+            >
               {item}
             </a>
           )

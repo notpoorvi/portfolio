@@ -59,7 +59,7 @@ const Header = () => {
       <p className="text-5xl text-brand-yellow py-2">Poorvi Bhatia</p>
       I'm a 3rd year Computer Science student at Simon Fraser University with
       interests in{" "}
-      <span className="text-brand-yellow font-extrabold">
+      <span className="text-brand-yellow font-extrabold font-mono tracking-tight">
         {displayText}
         <span className="animate-pulse text-3xl">|</span>
       </span>

@@ -11,67 +11,54 @@
       "HuggingFace",
       "Mistral-7B"
     ],
-    "gitHubLink": "https://github.com/ayanahye/Campus-Connect-AI",
-    "type": "project"
+    "gitHubLink": "https://github.com/ayanahye/Campus-Connect-AI"
   },
   {
-    "imgUrl": "/assets/images/campusConnect.png",
-    "name": "Campus Connect AI",
-    "date": "Mar. 2025 - May 2025",
-    "description": "Local Knowledge RAG Chat bot for International Students as part of RBC Borealis' Let's Solve It 2025",
-    "techStack": [
-      "Streamlit",
-      "Python",
-      "ChromaDB",
-      "HuggingFace",
-      "Mistral-7B"
-    ],
-    "gitHubLink": "https://github.com/ayanahye/Campus-Connect-AI",
-    "type": "project"
+    "imgUrl": "/assets/images/340-project.webp",
+    "name": "ABCD - Can You Detect Me?",
+    "date": "Mar. 2025 - Apr. 2025",
+    "description": "Classifying skin lesions using machine learning. By extracting key ABCD features, our classification techniques aim to detect melanoma and non-melanoma skin cancers early.",
+    "techStack": ["Python", "Sklearn", "Skimage", "Tensorflow", "Scipy"],
+    "gitHubLink": "https://github.com/sfu-cmpt340/2025_1_project_08"
   },
   {
-    "imgUrl": "/assets/images/campusConnect.png",
-    "name": "Campus Connect AI",
-    "date": "Mar. 2025 - May 2025",
-    "description": "Local Knowledge RAG Chat bot for International Students as part of RBC Borealis' Let's Solve It 2025",
-    "techStack": [
-      "Streamlit",
-      "Python",
-      "ChromaDB",
-      "HuggingFace",
-      "Mistral-7B"
-    ],
-    "gitHubLink": "https://github.com/ayanahye/Campus-Connect-AI",
-    "type": "project"
+    "imgUrl": "/assets/images/371-project.png",
+    "name": "Deny and Conquer",
+    "date": "Mar. 2025 - Apr. 2025",
+    "description": "Deny and Conquer is a competitive multiplayer game where players aim to claim territory on an 8x8 grid by coloring squares. The application follows a client-server architecture with token based messaging scheme.",
+    "techStack": ["Python", "socket programming", "pygame", "threads"],
+    "gitHubLink": "https://github.com/notpoorvi/371-group-project"
   },
   {
-    "imgUrl": "/assets/images/campusConnect.png",
-    "name": "Campus Connect AI",
-    "date": "Mar. 2025 - May 2025",
-    "description": "Local Knowledge RAG Chat bot for International Students as part of RBC Borealis' Let's Solve It 2025",
+    "imgUrl": "/assets/images/cmd-f.png",
+    "name": "RainbowPal - cmd-f 2025",
+    "date": "Mar. 2025",
+    "description": "A health tracking app designed for the LGBTQ+ community, featuring AI-powered companionship, medication reminders, and mental health support in an inclusive, user-friendly interface.",
     "techStack": [
-      "Streamlit",
+      "React Native",
       "Python",
       "ChromaDB",
-      "HuggingFace",
-      "Mistral-7B"
+      "Gemini",
+      "MongoDB",
+      "Express JS"
     ],
-    "gitHubLink": "https://github.com/ayanahye/Campus-Connect-AI",
-    "type": "project"
+    "gitHubLink": "https://github.com/sakdhillon/cmd-f-2025",
+    "previewLink": "https://devpost.com/software/rainbowpal"
   },
   {
-    "imgUrl": "/assets/images/campusConnect.png",
-    "name": "Campus Connect AI",
-    "date": "Mar. 2025 - May 2025",
-    "description": "Local Knowledge RAG Chat bot for International Students as part of RBC Borealis' Let's Solve It 2025",
+    "imgUrl": "/assets/images/276-project.png",
+    "name": "Easy As Pie",
+    "date": "Oct. 2023 - Dec. 2023",
+    "description": "A front-end recipe platform that transforms cooking discovery into an engaging experience. Users can explore diverse cuisines, plan meals, and navigate recipes tailored to their expertise level through an intuitive, API-driven interface.",
     "techStack": [
-      "Streamlit",
-      "Python",
-      "ChromaDB",
-      "HuggingFace",
-      "Mistral-7B"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "Youtube API",
+      "Spoonacular API"
     ],
-    "gitHubLink": "https://github.com/ayanahye/Campus-Connect-AI",
-    "type": "project"
+    "gitHubLink": "https://github.com/notpoorvi/cmpt-276-final-project-rivers",
+    "previewLink": "https://easyas-pie.netlify.app/"
   }
 ]
