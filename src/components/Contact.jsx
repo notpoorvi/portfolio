@@ -42,8 +42,8 @@ const EmailForm = () => {
         <p className="text-brand-purple text-xl md:text-2xl italic">name</p>
         <input
           type="text"
-          placeholder={`What is your name?`}
-          className="w-72 mid:w-[26rem] md:w-[32rem] h-12 text-base md:text-l bg-gray-200 text-brand-purple p-4 rounded-xl"
+          placeholder={`Your name`}
+          className="w-72 mid:w-[26rem] md:w-[32rem] h-12 text-base md:text-l bg-gray-50 text-brand-purple p-4 rounded-xl border-2 border-transparent focus:outline-none focus:border-brand-purple transition-colors duration-200"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -53,8 +53,8 @@ const EmailForm = () => {
         <p className="text-brand-purple text-xl md:text-2xl italic">email</p>
         <input
           type="email"
-          placeholder={`What is your email?`}
-          className="w-72 mid:w-[26rem] md:w-[32rem] h-12 text-base md:text-l bg-gray-200 text-brand-purple p-4 rounded-xl"
+          placeholder={`Your email`}
+          className="w-72 mid:w-[26rem] md:w-[32rem] h-12 text-base md:text-l bg-gray-50 text-brand-purple p-4 rounded-xl border-2 border-transparent focus:outline-none focus:border-brand-purple transition-colors duration-200"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -63,7 +63,7 @@ const EmailForm = () => {
       <div className="mx-auto w-fit mt-4">
         <p className="text-brand-purple text-xl md:text-2xl italic">message</p>
         <textarea
-          className="w-72 mid:w-[26rem] md:w-[32rem] h-28 text-base md:text-l bg-gray-200 text-brand-purple p-4 rounded-xl"
+          className="w-72 mid:w-[26rem] md:w-[32rem] h-28 text-base md:text-l bg-gray-50 text-brand-purple p-4 rounded-xl border-2 border-transparent focus:outline-none focus:border-brand-purple transition-colors duration-200"
           placeholder="Your message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -71,7 +71,7 @@ const EmailForm = () => {
       </div>
       <button
         type="submit"
-        className="flex items-center bg-[#ffffff] text-brand-purple rounded-xl h-10 w-44 justify-around  mx-auto backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 mt-4 hover:text-brand-yellow"
+        className="flex items-center bg-[#ffffff] text-brand-purple rounded-xl h-10 w-44 justify-around  mx-auto backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 mt-4 hover:text-brand-yellow transition delay-150 duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:border-brand-purple"
       >
         <p className="md:text-[18px] px-1">send message</p>
       </button>
@@ -97,7 +97,7 @@ const Contact = () => {
         {contactIcons.map((icon, idx) => (
           <div
             key={idx}
-            className="rounded-full backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 p-2 hover:shadow-xl transition-all duration-300"
+            className="rounded-full backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 p-2 hover:shadow-xl transition-all duration-300 hover:border-brand-purple hover:scale-105"
             style={{
               ":hover": {
                 boxShadow:

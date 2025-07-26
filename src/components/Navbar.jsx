@@ -32,44 +32,31 @@ const Navbar = () => {
     setHamburgerOpen(!hamburgerOpen);
   };
 
-  const aboutIcon = (
-    <a href="#about" className="flex items-center mx-2">
-      <img src={AboutIcon} className="w-6 h-6" />
-      <p className="text-[18px] px-1">about</p>
-    </a>
-  );
-
-  const experienceIcon = (
-    <a href="#experience" className="flex items-center mx-2">
-      <img src={ExperienceIcon} className="w-[18px] h-[18px]" />
-      <p className="text-[18px] px-1">experience</p>
-    </a>
-  );
-
-  const contactIcon = (
-    <a href="#contact" className="flex items-center mx-2">
-      <img src={ContactIcon} className="w-6 h-6" />
-      <p className="text-[18px] px-1">contact</p>
-    </a>
-  );
+  const navBtns = (type) => {
+    return (
+      <a
+        href={`#${type}`}
+        className="flex items-center mx-2 hover:bg-brand-purple-light rounded-lg p-1 hover:scale-105 transition delay-75 ease-in-out"
+      >
+        <p className="text-[18px] px-1 font-bold">{type}</p>
+      </a>
+    );
+  };
 
   return (
     <>
-      <nav className="font-atkinson flex bg-[#ffffff] text-brand-purple w-[85%] rounded-xl h-12 items-center mx-auto fixed top-6 left-1/2 transform -translate-x-1/2 justify-between backdrop-filter backdrop-blur-lg bg-opacity-5 border border-gray-400 z-50">
-        <p className="text-xl ml-8">Poorvi Bhatia</p>
+      <nav className="font-atkinson flex bg-[#ffffff] text-brand-purple w-full h-16 items-center mx-auto fixed top-0 left-1/2 transform -translate-x-1/2 md:justify-around justify-between backdrop-filter backdrop-blur-lg bg-opacity-5 border border-gray-400 z-50">
+        <p className="text-xl ml-8 font-extrabold">Poorvi Bhatia</p>
         <div className="hidden md:flex lg:justify-evenly md:mr-8">
-          {aboutIcon}
-          {experienceIcon}
-          {contactIcon}
+          {navBtns("about")}
+          {navBtns("portfolio")}
+          {navBtns("skills")}
+          {navBtns("experience")}
+          {navBtns("contact")}
         </div>
-        {/* <div className="flex items-center mr-8 gap-4"> */}
-        {/* <div className="hidden md:block">
-            <DarkModeBtn />
-          </div> */}
         <div onClick={toggleHamburger}>
           <Hamburger isOpen={hamburgerOpen} />
         </div>
-        {/* </div> */}
       </nav>
       <div
         className={`md:hidden fixed top-20 left-1/2 transform -translate-x-1/2 w-[85%] bg-[#ffffff] backdrop-filter backdrop-blur-lg bg-opacity-20 border border-gray-400 rounded-xl z-50 transition-all duration-300 ease-in-out ${
@@ -78,11 +65,13 @@ const Navbar = () => {
             : "opacity-0 -translate-y-4 pointer-events-none"
         } flex flex-col items-center text-brand-yellow text-[18px] font-extrabold`}
       >
-        {["about", "experience", "contact"].map((item, idx) => (
-          <a key={idx} href={`#${item}`} onClick={toggleHamburger}>
-            {item}
-          </a>
-        ))}
+        {["about", "portfolio", "skills", "experience", "contact"].map(
+          (item, idx) => (
+            <a key={idx} href={`#${item}`} onClick={toggleHamburger}>
+              {item}
+            </a>
+          )
+        )}
       </div>
     </>
   );
