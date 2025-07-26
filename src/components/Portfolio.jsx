@@ -79,7 +79,7 @@ const Portfolio = ({ projects }) => {
       >
         <p className="font-extrabold italic text-center">portfolio</p>
       </div>
-      <div className="columns-1 md:columns-2 lg:columns-3 gap-4 md:gap-6 lg:gap-8 py-10 px-4 w-[90%] mx-auto space-y-4">
+      <div className="columns-1 md:columns-2 xl:columns-3 gap-4 md:gap-6 lg:gap-8 py-10 px-4 w-[90%] mx-auto space-y-4">
         {projects.map((exp, idx) => {
           return (
             <div key={idx} className="break-inside-avoid">
@@ -99,34 +99,5 @@ const Portfolio = ({ projects }) => {
     </>
   );
 };
-
-// const Portfolio = ({ projects }) => {
-//   return (
-//     <>
-//       <div
-//         className="flex flex-col md:flex-row justify-center mt-16 font-extrabold text-brand-purple text-2xl items-center"
-//         id="portfolio"
-//       >
-//         <p className="font-extrabold italic text-center">portfolio</p>
-//       </div>
-//       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 py-10 px-4 w-[90%] mx-auto">
-//         {projects.map((exp, idx) => {
-//           return (
-//             <ProjectCard
-//               key={idx}
-//               imgUrl={exp.imgUrl}
-//               name={exp.name}
-//               date={exp.date}
-//               description={exp.description}
-//               techStack={exp.techStack || []}
-//               gitHubLink={exp.gitHubLink || ""}
-//               previewLink={exp.previewLink || ""}
-//             />
-//           );
-//         })}
-//       </div>
-//     </>
-//   );
-// };
 
 export default Portfolio;
