@@ -1,8 +1,8 @@
-import React from "react";
+import { useState, useRef, useEffect } from "react";
 
 const ExperienceButton = ({ buttonText, link }) => (
   <a
-    className="text-base mid:text-l bg-[#ffffff] text-brand-purple backdrop-blur-lg bg-opacity-10 transition delay-150 duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:text-brand-yellow p-1 rounded-lg border border-gray-400"
+    className="text-base mid:text-l bg-[#ffffff] text-brand-purple backdrop-blur-lg bg-opacity-10 transition delay-150 duration-300 ease-in-out hover:scale-105 p-1 rounded-lg border border-gray-400 hover:shadow-lg hover:text-brand-yellow hover:border-brand-purple"
     href={link}
     target="_blank"
     rel="noopener"
@@ -20,12 +20,67 @@ const ProjectCard = ({
   gitHubLink,
   previewLink,
 }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    // Intersection Observer to detect when the card is in view
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          // Unobserve the card once it is visible
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.1, // trigger when 10% of the card is visible
+        rootMargin: "-50px", // 50px margin to trigger earlier
+      }
+    );
+    // Observe the card element
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="bg-[#ffffff] text-brand-purple rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 max-w-md mid:max-w-lg md:max-w-xl mx-auto my-2 hover:scale-105 hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_0_20px_rgba(87,88,120,0.5)] flex flex-col h-fit">
+    <div
+      ref={cardRef}
+      className={`
+        bg-[#ffffff] text-brand-purple rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 
+        max-w-md mid:max-w-lg md:max-w-xl mx-auto my-2 
+        flex flex-col h-fit overflow-hidden
+        hover:scale-[1.035] hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(87,88,120,0.5)]
+        transition-[transform,box-shadow] duration-300 hover:border-brand-purple
+        ${
+          // scroll animation
+          isVisible
+            ? // if the card is visible, apply fade-in-up animation
+              "opacity-100 translate-y-0 animate-fade-in-up"
+            : // if the card is not visible, apply fade-out-down animation
+              "opacity-0 translate-y-8"
+        }
+      `}
+      // scroll animation: fade-in-up
+      style={{
+        transition: isVisible
+          ? // if the card is visible, apply fade-in animation
+            "opacity 1s ease-out, transform 1s ease-out"
+          : // if the card is not visible, apply fade-out animation
+            "opacity 1s ease-out, transform 1s ease-out, box-shadow 0.3s ease-out",
+      }}
+    >
       {/* image */}
       <div className="w-full h-48 md:h-52 lg:h-56 p-4 flex-shrink-0">
         <img
-          className="w-full h-full object-cover rounded-lg cursor-pointer"
+          className="w-full h-full object-cover rounded-lg "
           src={imgUrl}
           alt={name}
         />
