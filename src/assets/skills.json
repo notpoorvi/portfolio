@@ -1,0 +1,118 @@
+[
+  {
+    "imgUrl": "https://www.svgrepo.com/show/452091/python.svg",
+    "name": "python"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/452045/js.svg",
+    "name": "javascript"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
+    "name": "typescript"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/373528/cpp3.svg",
+    "name": "cpp"
+  },
+  {
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
+    "name": "c"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/452234/java.svg",
+    "name": "java"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/452092/react.svg",
+    "name": "react"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/372952/spark.svg",
+    "name": "spark"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/473742/pandas.svg",
+    "name": "pandas"
+  },
+  {
+    "imgUrl": "https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png",
+    "name": "sklearn"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/354240/pytorch.svg",
+    "name": "pytorch"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/353724/express.svg",
+    "name": "express"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/373845/mongo.svg",
+    "name": "mongo"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/373965/pgsql.svg",
+    "name": "pgsql"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/452210/git.svg",
+    "name": "git"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/217753/github.svg",
+    "name": "github"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/452202/figma.svg",
+    "name": "figma"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/373830/matlab.svg",
+    "name": "matlab"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/353659/docker-icon.svg",
+    "name": "docker"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/362176/terminal.svg",
+    "name": "linux"
+  },
+  {
+    "imgUrl": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+    "name": "huggingface"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/452228/html-5.svg",
+    "name": "html"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/452185/css-3.svg",
+    "name": "css"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/374118/tailwind.svg",
+    "name": "tailwind"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/354118/nodejs.svg",
+    "name": "nodejs"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/373848/mysql.svg",
+    "name": "mysql"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/374171/vscode.svg",
+    "name": "vscode"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/473611/flask.svg",
+    "name": "flask"
+  },
+  {
+    "imgUrl": "https://www.svgrepo.com/show/353935/jira.svg",
+    "name": "jira"
+  }
+]
