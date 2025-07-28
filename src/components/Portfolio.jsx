@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 
 const ExperienceButton = ({ buttonText, link }) => (
   <a
-    className="text-base mid:text-l bg-[#ffffff] text-brand-purple backdrop-blur-lg bg-opacity-10 transition delay-150 duration-300 ease-in-out hover:scale-105 p-1 rounded-lg border border-gray-400 hover:shadow-lg hover:text-brand-yellow hover:border-brand-purple"
+    className="text-base bg-[#ffffff] text-brand-purple backdrop-blur-lg bg-opacity-10 transition delay-150 duration-300 ease-in-out hover:scale-105 p-1 rounded-xl border border-gray-400 hover:shadow-lg hover:text-brand-yellow hover:border-brand-purple text-center"
     href={link}
     target="_blank"
     rel="noopener"
@@ -38,7 +38,7 @@ const ProjectCard = ({
         rootMargin: "-50px", // 50px margin to trigger earlier
       }
     );
-    // Observe the card element
+    // observe the card element
     if (cardRef.current) {
       observer.observe(cardRef.current);
     }
@@ -57,8 +57,8 @@ const ProjectCard = ({
         bg-[#ffffff] text-brand-purple rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 
         max-w-md mid:max-w-lg md:max-w-xl mx-auto my-2 
         flex flex-col h-fit overflow-hidden
-        hover:scale-[1.035] hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(87,88,120,0.5)]
-        transition-[transform,box-shadow] duration-300 hover:border-brand-purple
+        hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(87,88,120,0.5)]
+        transition-all duration-150 ease-in-out hover:border-brand-purple 
         ${
           // scroll animation
           isVisible
@@ -72,9 +72,9 @@ const ProjectCard = ({
       style={{
         transition: isVisible
           ? // if the card is visible, apply fade-in animation
-            "opacity 1s ease-out, transform 1s ease-out"
+            "opacity 1s ease-out, transform 0.5s ease-out"
           : // if the card is not visible, apply fade-out animation
-            "opacity 1s ease-out, transform 1s ease-out, box-shadow 0.3s ease-out",
+            "opacity 1s ease-out, transform 1s ease-out",
       }}
     >
       {/* image */}
@@ -104,7 +104,7 @@ const ProjectCard = ({
         <div className="px-4 flex gap-1 text-[10px] flex-wrap justify-start">
           {techStack.map((item, idx) => (
             <div
-              className="bg-[#ffffff] backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 p-[6px] rounded-2xl font-mono"
+              className="bg-[#ffffff] backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-400 p-1 rounded-2xl font-mono"
               key={idx}
             >
               {item.toUpperCase()}
@@ -112,7 +112,7 @@ const ProjectCard = ({
           ))}
         </div>
         {/* links */}
-        <div className="px-4 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
+        <div className="px-4 flex flex-col space-y-1">
           {gitHubLink && (
             <ExperienceButton buttonText="Github" link={gitHubLink} />
           )}
@@ -134,7 +134,7 @@ const Portfolio = ({ projects }) => {
       >
         <p className="font-extrabold italic text-center">portfolio</p>
       </div>
-      <div className="columns-1 md:columns-2 xl:columns-3 gap-4 md:gap-6 lg:gap-8 py-10 px-4 w-[90%] mx-auto space-y-4">
+      <div className="columns-1 md:columns-2 xl:columns-3 gap-4 md:gap-6 lg:gap-8 py-10 px-4 w-[80%] mx-auto space-y-4">
         {projects.map((exp, idx) => {
           return (
             <div key={idx} className="break-inside-avoid">
