@@ -24,3 +24,12 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
+
+@keyframes swipe {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

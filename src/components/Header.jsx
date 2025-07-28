@@ -56,13 +56,15 @@ const Header = () => {
       id="about"
     >
       Hello! I'm
-      <p className="text-5xl text-brand-yellow py-2">Poorvi Bhatia</p>
+      <p className="text-4xl mid:text-5xl text-brand-yellow py-2">
+        Poorvi Bhatia
+      </p>
       I'm a 3rd year Computer Science student at Simon Fraser University with
       interests in{" "}
-      <span className="text-brand-yellow font-extrabold font-mono tracking-tight">
+      <p className="text-brand-yellow font-extrabold font-mono tracking-tight">
         {displayText}
         <span className="animate-pulse text-3xl">|</span>
-      </span>
+      </p>
     </div>
   );
 };

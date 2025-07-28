@@ -134,7 +134,7 @@ const Portfolio = ({ projects }) => {
       >
         <p className="font-extrabold italic text-center">portfolio</p>
       </div>
-      <div className="columns-1 md:columns-2 xl:columns-3 gap-4 md:gap-6 lg:gap-8 py-10 px-4 w-[80%] mx-auto space-y-4">
+      <div className="columns-1 md:columns-2 xl:columns-3 gap-4 lg:gap-6 py-10 px-2 w-[80%] mx-auto space-y-4">
         {projects.map((exp, idx) => {
           return (
             <div key={idx} className="break-inside-avoid">

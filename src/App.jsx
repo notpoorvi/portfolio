@@ -2,12 +2,13 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import ResumeButton from "./components/ResumeButton";
 import AboutSection from "./components/AboutSection";
-import ExperienceSection from "./components/ExperienceSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import projects from "./assets/projects.json";
 import Aurora from "./components/Aurora";
 import Portfolio from "./components/Portfolio";
+import Skills from "./components/Skills";
+import skillsList from "./assets/skills.json";
 
 function App() {
   const isMobile = window.innerWidth < 768;
@@ -26,7 +27,7 @@ function App() {
         <ResumeButton />
         <AboutSection />
         <Portfolio projects={projects} />
-        {/* <ExperienceSection experiences={experiences} /> */}
+        <Skills skillsList={skillsList} />
         <Contact />
         <Footer />
       </div>
