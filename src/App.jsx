@@ -8,12 +8,15 @@ import projects from "./assets/projects.json";
 import Aurora from "./components/Aurora";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
+import SkillsNew from "./components/SkillsNew";
 import skillsList from "./assets/skills.json";
+import CustomCursor from "./components/Cursor";
 
 function App() {
   const isMobile = window.innerWidth < 768;
   return (
     <>
+      <CustomCursor />
       <Aurora
         colorStops={["#bcd1f5", "#FFFFFF", "#bcc4db"]}
         blend={1}
@@ -27,7 +30,7 @@ function App() {
         <ResumeButton />
         <AboutSection />
         <Portfolio projects={projects} />
-        <Skills skillsList={skillsList} />
+        <SkillsNew skillsList={skillsList} />
         <Contact />
         <Footer />
       </div>

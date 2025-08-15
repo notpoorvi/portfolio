@@ -13,6 +13,19 @@ const EmailForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const nameRegex = /^[a-zA-Z\s]+$/;
+
+    if (!name.trim() || !nameRegex.test(name.trim())) {
+      alert("Please enter a valid name (letters only)");
+      return;
+    }
+
+    if (!email.trim() || !emailRegex.test(email.trim())) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
     const serviceId = "service_a17ypcw";
     const templateId = "template_lzwakri";
     const publicKey = "iJoHL4iqpoymAn4vf";
@@ -23,6 +36,7 @@ const EmailForm = () => {
       to_name: "Poorvi Bhatia",
       message: message,
     };
+
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
@@ -75,7 +89,7 @@ const EmailForm = () => {
       <form onSubmit={handleSubmit}>
         {/* name field */}
         <div className="mx-auto w-fit mt-4">
-          <p className="text-brand-purple text-xl md:text-2xl italic">name</p>
+          <p className="text-brand-purple text-xl md:text-2xl italic">name *</p>
           <input
             type="text"
             placeholder={`Your name`}
@@ -86,7 +100,9 @@ const EmailForm = () => {
         </div>
         {/* email field */}
         <div className="mx-auto w-fit mt-4">
-          <p className="text-brand-purple text-xl md:text-2xl italic">email</p>
+          <p className="text-brand-purple text-xl md:text-2xl italic">
+            email *
+          </p>
           <input
             type="email"
             placeholder={`Your email`}
