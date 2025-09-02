@@ -1,118 +1,132 @@
-[
-  {
-    "imgUrl": "https://www.svgrepo.com/show/452091/python.svg",
-    "name": "python"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/452045/js.svg",
-    "name": "javascript"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
-    "name": "typescript"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/373528/cpp3.svg",
-    "name": "cpp"
-  },
-  {
-    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
-    "name": "c"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/452234/java.svg",
-    "name": "java"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/452092/react.svg",
-    "name": "react"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/372952/spark.svg",
-    "name": "spark"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/473742/pandas.svg",
-    "name": "pandas"
-  },
-  {
-    "imgUrl": "https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png",
-    "name": "sklearn"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/354240/pytorch.svg",
-    "name": "pytorch"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/353724/express.svg",
-    "name": "express"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/373845/mongo.svg",
-    "name": "mongo"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/373965/pgsql.svg",
-    "name": "pgsql"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/452210/git.svg",
-    "name": "git"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/217753/github.svg",
-    "name": "github"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/452202/figma.svg",
-    "name": "figma"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/373830/matlab.svg",
-    "name": "matlab"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/353659/docker-icon.svg",
-    "name": "docker"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/362176/terminal.svg",
-    "name": "linux"
-  },
-  {
-    "imgUrl": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
-    "name": "huggingface"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/452228/html-5.svg",
-    "name": "html"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/452185/css-3.svg",
-    "name": "css"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/374118/tailwind.svg",
-    "name": "tailwind"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/354118/nodejs.svg",
-    "name": "nodejs"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/373848/mysql.svg",
-    "name": "mysql"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/374171/vscode.svg",
-    "name": "vscode"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/473611/flask.svg",
-    "name": "flask"
-  },
-  {
-    "imgUrl": "https://www.svgrepo.com/show/353935/jira.svg",
-    "name": "jira"
-  }
-]
+{
+  "Programming Languages": [
+    {
+      "imgUrl": "https://www.svgrepo.com/show/452045/js.svg",
+      "name": "JavaScript"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/354478/typescript-icon.svg",
+      "name": "TypeScript"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/452091/python.svg",
+      "name": "Python"
+    },
+
+    {
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
+      "name": "C"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/373528/cpp3.svg",
+      "name": "C++"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/452234/java.svg",
+      "name": "Java"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/373830/matlab.svg",
+      "name": "MATLAB"
+    }
+  ],
+  "Frontend": [
+    {
+      "imgUrl": "https://www.svgrepo.com/show/452092/react.svg",
+      "name": "React"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/452228/html-5.svg",
+      "name": "HTML"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/452185/css-3.svg",
+      "name": "CSS"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/374118/tailwind.svg",
+      "name": "Tailwind CSS"
+    }
+  ],
+  "Backend": [
+    {
+      "imgUrl": "https://www.svgrepo.com/show/353724/express.svg",
+      "name": "ExpressJS"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/354118/nodejs.svg",
+      "name": "Node.js"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/473611/flask.svg",
+      "name": "Flask"
+    },
+    {
+      "imgUrl": "https://static.djangoproject.com/img/icon-touch.e4872c4da341.png",
+      "name": "Django"
+    }
+  ],
+  "Databases": [
+    {
+      "imgUrl": "https://www.svgrepo.com/show/373845/mongo.svg",
+      "name": "MongoDB"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/373965/pgsql.svg",
+      "name": "PostgreSQL"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/373848/mysql.svg",
+      "name": "MySQL"
+    },
+    {
+      "imgUrl": "https://www.trychroma.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchroma.d840f629.png&w=1920&q=75&dpl=dpl_Dc8K3cwpS2e2VMFRGYDC6jxuUPzS",
+      "name": "ChromaDB"
+    }
+  ],
+  "AI/ML": [
+    {
+      "imgUrl": "https://www.svgrepo.com/show/372952/spark.svg",
+      "name": "Spark"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/473742/pandas.svg",
+      "name": "Pandas"
+    },
+    {
+      "imgUrl": "https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png",
+      "name": "Scikit-learn"
+    },
+
+    {
+      "imgUrl": "https://www.svgrepo.com/show/354240/pytorch.svg",
+      "name": "PyTorch"
+    }
+  ],
+  "Developer Tools & Platforms": [
+    {
+      "imgUrl": "https://www.svgrepo.com/show/217753/github.svg",
+      "name": "Git/GitHub"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/452202/figma.svg",
+      "name": "Figma"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/353659/docker-icon.svg",
+      "name": "Docker"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/362176/terminal.svg",
+      "name": "Linux"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/374171/vscode.svg",
+      "name": "VS Code"
+    },
+    {
+      "imgUrl": "https://www.svgrepo.com/show/353935/jira.svg",
+      "name": "Jira"
+    }
+  ]
+}

@@ -50,8 +50,8 @@ const Navbar = () => {
         <div className="hidden md:flex lg:justify-evenly md:mr-8">
           {navBtns("about")}
           {navBtns("portfolio")}
-          {navBtns("skills")}
           {navBtns("experience")}
+          {navBtns("skills")}
           {navBtns("contact")}
         </div>
         <div onClick={toggleHamburger}>
@@ -65,7 +65,7 @@ const Navbar = () => {
             : "opacity-0 -translate-y-4 pointer-events-none"
         } flex flex-col items-center text-brand-yellow text-xl font-extrabold `}
       >
-        {["about", "portfolio", "skills", "experience", "contact"].map(
+        {["about", "portfolio", "experience", "skills", "contact"].map(
           (item, idx) => (
             <a
               key={idx}

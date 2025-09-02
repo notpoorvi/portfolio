@@ -18,19 +18,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: none !important;
-}
-
-*, *::before, *::after {
-  cursor: none !important;
-}
-
-html, body, #root {
-  cursor: none !important;
-}
-
-a, button, [role="button"], input, textarea, select {
-  cursor: none !important;
 }
 
 html {
