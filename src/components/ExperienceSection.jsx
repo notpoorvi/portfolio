@@ -9,13 +9,15 @@ const ExperienceSection = ({ experiences }) => {
       >
         experience
       </div>
-      <div>
+      <div className="w-[80%] mx-auto flex flex-col items-center mt-8 mb-16">
         {experiences.map((exp, idx) => (
           <div
             key={idx}
-            className="relative flex items-center mb-4 w-[80%] mx-auto"
+            className={`p-4 flex flex-col lg:flex-row items-center mb-4 shadow-md rounded-xl border-brand-purple hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(87,88,120,0.5)] transition-all duration-150 ease-in-out ${
+              idx % 2 === 0 ? "lg:flex-row-reverse" : ""
+            }`}
           >
-            <div className="rounded-xl w-full py-6">
+            <div className="rounded-xl w-[28rem] py-2">
               <h3 className="text-xl font-semibold text-brand-purple mb-1">
                 {exp.title}
               </h3>
@@ -25,17 +27,20 @@ const ExperienceSection = ({ experiences }) => {
               <p className="text-sm text-brand-yellow mb-3 font-medium">
                 {exp.period}
               </p>
-              <p className="text-brand-purple leading-relaxed max-w-[60%]">
-                {exp.description.map((item) => (
-                  <li>{item}</li>
+              <ul className="text-brand-purple leading-relaxed">
+                {exp.description.map((item, itemIdx) => (
+                  <li key={itemIdx}>{item}</li>
                 ))}
-              </p>
+              </ul>
             </div>
-            <img
-              src={exp.imgUrl}
-              className="hidden lg:block w-full h-full rounded-lg max-w-xs"
-              alt=""
-            />
+            <div className="hidden md:block w-[24rem] lg:px-6">
+              <img
+                src={exp.imgUrl}
+                className="w-full h-auto rounded-lg lg:max-h-36 object-cover"
+                alt={`${exp.company} experience`}
+                loading="lazy"
+              />
+            </div>
           </div>
         ))}
       </div>
