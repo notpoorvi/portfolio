@@ -4,7 +4,6 @@ import AboutIcon from "../assets/about.svg";
 import ExperienceIcon from "../assets/experience.svg";
 import ContactIcon from "../assets/contact.svg";
 import { useState } from "react";
-import DarkModeBtn from "./DarkModeBtn";
 
 const Hamburger = ({ isOpen }) => (
   <div className="w-6 h-6 flex justify-around flex-col z-10 md:hidden mr-8 cursor-pointer">

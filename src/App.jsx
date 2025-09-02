@@ -7,9 +7,10 @@ import Footer from "./components/Footer";
 import projects from "./assets/projects.json";
 import Aurora from "./components/Aurora";
 import Portfolio from "./components/Portfolio";
+import ExperienceSection from "./components/ExperienceSection";
 import Skills from "./components/Skills";
-import SkillsNew from "./components/SkillsNew";
 import skillsObj from "./assets/skills.json";
+import experiences from "./assets/experiences.json";
 
 function App() {
   const isMobile = window.innerWidth < 768;
@@ -28,8 +29,8 @@ function App() {
         <ResumeButton />
         <AboutSection />
         <Portfolio projects={projects} />
+        <ExperienceSection experiences={experiences} />
         <Skills skillsObj={skillsObj} />
-        {/* <SkillsNew skillsList={skillsList} /> */}
         <Contact />
         <Footer />
       </div>

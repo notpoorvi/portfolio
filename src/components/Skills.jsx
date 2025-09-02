@@ -41,7 +41,7 @@ const Skills = ({ skillsObj }) => {
       </div>
       <div
         ref={cardRef}
-        className="columns-1 mid:columns-2 gap-4 p-2 w-[80%] mx-auto space-y-4"
+        className="columns-1 mid:columns-2 lg:columns-3 p-2 w-[80%] mx-auto space-y-4"
       >
         {Object.entries(skillsObj).map(([category, items]) => (
           <div
@@ -63,14 +63,18 @@ const Skills = ({ skillsObj }) => {
             }}
           >
             <h3 className="text-center text-xl mb-4 font-bold">{category}</h3>
-            <div className="flex flex-row flex-wrap sm:grid-cols-4 gap-1 justify-center align-middle ">
+            <div className="flex flex-row flex-wrap gap-1 lg:gap-2 justify-center align-middle lg:mb-4">
               {items.map((skill) => (
                 <div
                   key={skill.name}
                   className="flex flex-row items-center rounded-xl border border-gray-400 p-1"
                 >
-                  <img src={skill.imgUrl} alt={skill.name} className="w-6" />
-                  <span className="text-sm md:text-base text-center p-1">
+                  <img
+                    src={skill.imgUrl}
+                    alt={skill.name}
+                    className="w-6 lg:w-8"
+                  />
+                  <span className="text-sm md:text-base lg:text-lg text-center p-1">
                     {skill.name}
                   </span>
                 </div>
