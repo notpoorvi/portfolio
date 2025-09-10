@@ -1,19 +1,36 @@
 [
   {
+    "imgUrl": "https://cdn.prod.website-files.com/67a53328ecff67f8d0a07c6b/67b9716e2c262eb58d786385_Logo.svg",
+    "title": "AI Data Research Assistant & Full Stack Developer",
+    "company": "Simuhealth",
+    "period": "Sept. 2025 - Dec. 2025",
+    "description": []
+  },
+  {
     "imgUrl": "https://ixlab.cs.sfu.ca/static/img/siteAssets/globalAssets/ixlab.svg",
-    "title": "Undergrad Research Assistant",
+    "title": "Undergrad HCI Research Assistant",
     "company": "ixlab, SFU",
     "period": "May. 2025 - Aug. 2025",
     "description": [
       "Analyzed 2K+ Reddit posts with PRAW; classified using LLMs, BERT, SVM+TF-IDF",
       "Generated clear process visualizations and plots using ",
       "Processed and analyzed large-scale user study data, identifying actionable insights"
-    ],
-    "type": "research"
+    ]
+  },
+  {
+    "imgUrl": "/assets/images/campusConnect.png",
+    "title": "Undergrad ML Research - Let's Solve It",
+    "company": "RBC Borealis",
+    "period": "Mar. 2025 - May 2025",
+    "description": [
+      "Built a RAG-based chatbot to help 10k+ SFU international students access local info",
+      "Curated a 200+ document knowledge base; used category-wise prompting to speed retrieval and boost relevance",
+      "Evaluated 5+ LLMs and embeddings; utilized a quantized model achieving faster inference"
+    ]
   },
   {
     "imgUrl": "/assets/images/rosielab.png",
-    "title": "Undergrad Research Assistant",
+    "title": "Undergrad AI Research Assistant",
     "company": "Rosie Lab, SFU",
     "period": "Dec. 2024 - Aug. 2025",
     "description": [
@@ -22,23 +39,10 @@
     ]
   },
   {
-    "imgUrl": "/assets/images/rosielab.png",
-    "title": "Undergrad Research Assistant",
+    "imgUrl": "https://engineering-m.academickeys.com/seeker_job_attachments.php?dothis=display&job_file[IDX]=19583",
+    "title": "Computing Science Peer Tutor",
     "company": "Rosie Lab, SFU",
     "period": "Dec. 2024 - Aug. 2025",
-    "description": [
-      "Benchmarked ASR models from OpenAI and Nvidia on untrained audio types (3K+ audio files)",
-      "Contributing author on publication, released open-source dataset on Hugging Face"
-    ]
-  },
-  {
-    "imgUrl": "/assets/images/rosielab.png",
-    "title": "Undergrad Research Assistant",
-    "company": "Rosie Lab, SFU",
-    "period": "Dec. 2024 - Aug. 2025",
-    "description": [
-      "Benchmarked ASR models from OpenAI and Nvidia on untrained audio types (3K+ audio files)",
-      "Contributing author on publication, released open-source dataset on Hugging Face"
-    ]
+    "description": []
   }
 ]

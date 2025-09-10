@@ -13,7 +13,7 @@ const ExperienceSection = ({ experiences }) => {
         {experiences.map((exp, idx) => (
           <div
             key={idx}
-            className={`p-4 flex flex-col lg:flex-row items-center mb-4 shadow-md rounded-xl border-brand-purple hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(87,88,120,0.5)] transition-all duration-150 ease-in-out ${
+            className={`p-4 flex flex-col lg:flex-row items-center mb-4 shadow-xl rounded-xl border-brand-purple  hover:shadow-[0_0_20px_rgba(87,88,120,0.5)] transition-all duration-150 ease-in-out ${
               idx % 2 === 0 ? "lg:flex-row-reverse" : ""
             }`}
           >
@@ -36,7 +36,7 @@ const ExperienceSection = ({ experiences }) => {
             <div className="hidden md:block w-[24rem] lg:px-6">
               <img
                 src={exp.imgUrl}
-                className="w-full h-auto rounded-lg lg:max-h-36 object-cover"
+                className="w-full h-full rounded-md lg:max-h-36 object-contain hover:scale-105 transition-all duration-150 ease-in-out"
                 alt={`${exp.company} experience`}
                 loading="lazy"
               />
